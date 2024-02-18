@@ -1,0 +1,432 @@
+*{
+    font-family: "Gamja Flower", sans-serif;
+    
+}
+
+body{
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: rgb(0, 0, 0);
+    width: 400px;
+    border-radius: 0.5rem;
+}
+
+.main-content{
+    background-color: rgba(45, 39, 39, 0.501);
+    margin: 0.5rem;
+    flex: 1;
+    overflow: auto;
+    border-radius: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.music-player{
+    position: fixed;
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
+}
+
+/* SIDEBAR */
+
+.nav{
+    background-color: #121212;
+    height: 100px;
+    margin: 0.5rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-option{
+    padding: 0.75rem 1rem;
+}
+
+.search{
+    opacity: 0.7;
+}
+
+.search:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    margin-left: 1rem;
+    margin-right: 1.25rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 100%;
+    margin: 0.5rem;
+}
+
+.options{
+    display: flex;
+    padding: 0.8rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: all 0.2s linear;
+}
+
+.lib-option{
+    opacity: 0.7;
+}
+
+.lib-option:hover{
+    opacity: 1;
+}
+
+.icon:hover{
+    background-color: rgb(55, 47, 47);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.options img{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 1rem;
+}
+
+.box{
+    background-color: #232323;
+    height: 10rem;
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 1rem;
+}
+
+.box-p1{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.box-p2{
+    opacity: 0.8;
+}
+
+.box-p2:hover{
+    opacity: 1;
+}
+
+.badge{
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    transition: all 0.1s linear;
+}
+
+.badge:hover{
+    transform: scale(1.05);
+}
+
+
+/* MAIN CONTENT */
+
+.sticky-nav{
+    height: 4rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.sticky-nav-icons{
+    margin-left: 1rem;
+}
+
+.sticky-nav-icons img{
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+.sticky-nav-icons img:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.2);
+}
+
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo img{
+    height: 2.5rem;
+    width: 2.5rem2;
+    margin-right: 1rem;
+}
+
+.logo a{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+
+.logo a:hover{
+    font-size: 2.5rem;
+}
+
+.sticky-nav-options{
+    margin-right: 1.5rem;
+}
+
+.sticky-nav-options button{
+    margin-right: 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+}
+
+.dark-badge{
+    background-color: black;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.dark-badge:hover{
+    box-shadow: 0 0 2px white;
+    transform: scale(1.05);
+}
+
+.premium{
+    transition: all 0.2s linear;
+}
+
+.premium:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px black;
+}
+
+.download{
+    margin: 0 0.5rem 0 0;
+}
+
+.user{
+    font-size: 1.5rem;
+    transition: all 0.2s linear;
+}
+
+.user:hover{
+    scale: 1.2;
+}
+
+@media (max-width:984px) {
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    width: 180px;
+    background-color: #232323;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    transition: all 0.2s linear;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card .card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card .card-info{
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.card-container{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.footer{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.line{
+    border-top: 1px solid white;
+    opacity: 0.5;
+    width: 85%;
+    margin-left: 3rem;
+}
+
+/* MUSIC PLAYER */
+
+.music-player{
+    display: flex;
+}
+
+/* FIRST */
+.album{
+    width: 25%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.album-img img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.3rem;
+}
+
+.album-text{
+    line-height: 0.4rem;
+}
+
+.album-text h4{
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.album-text p{
+    margin-bottom: 3rem;
+    opacity: 0.5;
+}
+
+.album-text p:hover{
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+.album i{
+    transition: all 0.2s linear;
+    opacity: 0.7;
+}
+
+.album i:hover{
+    opacity: 1;
+    color: red;
+    transform: scale(1.1);
+}
+
+
+/* SECOND */
+.player{
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player-controls img{
+    height: 1rem;
+    margin: 0 0.8rem;
+    opacity: 0.7;
+}
+
+.player-controls .play{
+    height: 1.7rem;
+    margin-top: 0.6rem;
+}
+
+.player-controls img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.playback-bar span,input{
+    margin: 0 0.8rem;
+}
+
+.playback-bar input{
+    width: 20rem;
+    cursor: pointer;
+}
+
+
+/* THIRD */
+.controls{
+    width: 25%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls i,div,input{
+    margin-top: 0.2rem;
+}
+
+.controls i{
+    opacity: 0.7;
+}
+
+.controls input{
+    cursor: pointer;
+}
+
+.controls i:hover{
+    opacity: 1;
+}
+
+.controls .volume{
+    display: flex;
+    justify-content: center;
+}
+
