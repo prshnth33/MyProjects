@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+}
+
+.container{
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 20%;
+    margin: 1rem;
+    box-shadow: 0 0 6px black;
+    transition: 0.2s linear;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.574);
+}
+
+.green{
+    background-color: rgba(0, 128, 0, 0.441);
+}
+
+.yellow{
+    background-color: rgba(255, 255, 0, 0.305);
+}
+
+.purple{
+    background-color: rgba(128, 0, 128, 0.535);
+}
+
+.gameflash{
+    background-color: red;
+}
+
+.userflash{
+    background-color: green;
+}
